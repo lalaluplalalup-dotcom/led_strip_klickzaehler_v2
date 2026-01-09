@@ -6,6 +6,9 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     anzahl_personen = 0
+    basic.showNumber(anzahl_personen)
+    strip.clear()
+    strip.show()
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     anzahl_personen += -1
