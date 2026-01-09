@@ -1,8 +1,8 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
+    strip.setPixelColor(anzahl_personen, neopixel.colors(NeoPixelColors.Red))
+    strip.show()
     anzahl_personen += 1
     basic.showNumber(anzahl_personen)
-    strip.setPixelColor(anzahl_personen - 1, neopixel.colors(NeoPixelColors.Red))
-    strip.show()
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     anzahl_personen = 0
