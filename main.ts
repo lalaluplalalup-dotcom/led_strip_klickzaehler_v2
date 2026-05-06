@@ -5,10 +5,7 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     basic.showNumber(anzahl_personen)
 })
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
-    anzahl_personen = 0
-    basic.showNumber(anzahl_personen)
-    strip.clear()
-    strip.show()
+    strip.showRainbow(1, 360)
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     anzahl_personen += -1
@@ -19,7 +16,4 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
 let strip: neopixel.Strip = null
 let anzahl_personen = 0
 anzahl_personen = 0
-strip = neopixel.create(DigitalPin.P1, 30, NeoPixelMode.RGB)
-basic.forever(function () {
-	
-})
+strip = neopixel.create(DigitalPin.P1, 30, NeoPixelMode.RGB_RGB)
